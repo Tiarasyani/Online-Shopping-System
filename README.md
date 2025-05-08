@@ -1,6 +1,8 @@
 # Online-Shopping-System
 
+
 ## 📌 Alur Program
+
 
 Berikut ini adalah alur kerja dari sistem **Online Shopping System**:
 
@@ -28,7 +30,6 @@ Method `getInfo()` yang ada di kelas `Product` dioverride di masing-masing subcl
 ### 5. Output ke Konsol
 Setelah objek dibuat, method `getInfo()` dipanggil dari masing-masing objek.  
 Hasilnya ditampilkan ke layar, misalnya:
-
 
 ### 6. Struktur Berkas
 Proyek terdiri dari 4 berkas utama:
