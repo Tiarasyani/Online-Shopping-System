@@ -1,5 +1,36 @@
 # Online-Shopping-System
 
-Program Online Shopping System ini berjalan dengan prinsip object oriented programming (OOP) dimana seluruh entitas diwakili oleh objek-objek yang saling berinteraksi. Saat program dijalankan melalui MainApp, sistem pertama-tama menginisialisasi daftar produk dengan membuat objek-objek dari kelas Electronic dan Clothing yang merupakan turunan dari kelas Product. Kemudian program menampilkan menu interaktif yang memungkinkan pengguna untuk melihat produk, menambahkan produk ke keranjang belanja, melihat isi keranjang, melakukan checkout, atau keluar dari program. Setiap pilihan menu memicu method tertentu yang akan dijalankan, misalnya saat pengguna memilih untuk melihat produk, method displayProducts() akan dipanggil untuk menampilkan semua produk yang tersedia beserta informasi detailnya.
+**📌 ALUR PROGRAM**
+Berikut ini adalah alur kerja dari sistem Online Shopping System:
 
-Ketika pengguna menambahkan produk ke keranjang, sistem akan membuat objek ShoppingCart yang menyimpan referensi ke produk yang dipilih beserta jumlahnya. ShoppingCart akan melacak semua item yang ditambahkan dan dapat menghitung total belanjaan. Pada saat checkout, sistem akan memeriksa ketersediaan stok untuk setiap produk dalam keranjang dan mengurangi stok produk jika pembelian berhasil. Program ini mengimplementasikan konsep pewarisan dimana kelas Electronic dan Clothing mewarisi properti dan method dari kelas Product, namun masing-masing memiliki atribut dan perilaku khusus. Polimorfisme diterapkan melalui override method displayInfo() di setiap subclass sehingga informasi spesifik untuk masing-masing jenis produk dapat ditampilkan dengan tepat. Program ini merupakan contoh aplikasi sederhana dari konsep OOP yang mendemonstrasikan bagaimana objek-objek dapat berinteraksi untuk membentuk sebuah sistem yang fungsional.
+1. Inisialisasi Objek Produk
+    Program dimulai dari kelas MainApp.
+    Di dalamnya, dua objek dibuat:
+      Satu objek dari kelas Electronics
+      Satu objek dari kelas Clothing
+
+2. Penggunaan Constructor dan Encapsulation
+    Setiap objek dibuat dengan memanggil konstruktor yang mengisi atribut seperti name, price, dan productId.
+    Semua atribut bersifat private (enkapsulasi) dan diakses melalui method get dan set.
+
+3. Pewarisan (Inheritance)
+    Kelas Electronics dan Clothing merupakan subclass dari Product.
+    Mereka mewarisi atribut umum dari Product dan menambahkan atribut spesifik:
+      _Electronics_: memiliki atribut tambahan warrantyMonths.
+      _Clothing_: memiliki atribut tambahan size.
+
+4. Overriding Method (getInfo())
+    Method getInfo() yang ada di kelas Product dioverride di masing-masing subclass untuk menambahkan informasi khusus:
+      Electronics menampilkan informasi garansi.
+      Clothing menampilkan informasi ukuran.
+
+5. Output ke Konsol
+    Setelah objek dibuat, method _getInfo()_ dipanggil dari masing-masing objek.
+    Hasilnya ditampilkan ke layar.
+
+6. Struktur Berkas
+    Proyek terdiri dari 4 berkas utama:
+      _Product.java_ → Kelas induk produk
+      _Electronics.java_ → Subclass untuk produk elektronik
+      _Clothing.java_ → Subclass untuk pakaian
+      _MainApp.java_ → Kelas utama untuk menjalankan program
