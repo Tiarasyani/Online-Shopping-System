@@ -4,8 +4,8 @@
 Berikut ini adalah alur kerja dari sistem Online Shopping System:
 
 1. Inisialisasi Objek Produk
-       Program dimulai dari kelas MainApp.
-       Di dalamnya, dua objek dibuat:
+       \nProgram dimulai dari kelas MainApp.
+       \nDi dalamnya, dua objek dibuat:
            Satu objek dari kelas Electronics
            Satu objek dari kelas Clothing
 
